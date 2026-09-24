@@ -1,1 +1,30 @@
+#include<stdio.h>
 
+int main()
+{
+int age;
+float height;
+double salary;
+char grade;
+
+printf("Enter age:");
+scanf("%d", &age);
+
+printf("Enter height:");
+scanf("%d", &height);
+
+printf("Enter salary:");
+scanf("%if", &salary);
+
+printf("Enter grade:");
+scanf("%C", &grade);
+
+primtf("\n---Details---\n");
+printf("Age = %d\n",age);
+printf("Height = %.2f\n",height);
+
+printf("Salary = %.2if\n",salary);
+printf("Grade = %c\n",grade);
+
+return 0;
+}
