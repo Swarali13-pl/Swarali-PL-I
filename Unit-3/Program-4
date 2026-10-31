@@ -1,4 +1,4 @@
-#include &lt;stdio.h&gt;
+#include<stdio.h>
 
 long int factorial(int n)
 {
@@ -18,12 +18,12 @@ int main()
 int num;
 long int result;
 
-printf(&quot;Enter a number: &quot;);
-scanf(&quot;%d&quot;, &amp;num);
+printf("Enter a number:");
+scanf("%d", num);
 
 result = factorial(num);
 
-printf(&quot;Factorial of %d = %ld\n&quot;, num, result);
+printf("Factorial of %d = %ld\n", result);
 
 return 0;
 }
