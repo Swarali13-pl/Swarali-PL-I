@@ -1,1 +1,29 @@
+#include <stdio.h>
 
+union Data
+{
+    int i;
+    float f;
+    char c;
+};
+
+int main()
+{
+    union Data d;
+
+    printf("Size of union = %lu bytes\n", sizeof(d));
+
+    d.i = 10;
+    printf("\nInteger = %d", d.i);
+    printf("\nAddress of i = %p", (void *)&d.i);
+
+    d.f = 20.5;
+    printf("\n\nFloat = %.2f", d.f);
+    printf("\nAddress of f = %p", (void *)&d.f);
+
+    d.c = 'A';
+    printf("\n\nCharacter = %c", d.c);
+    printf("\nAddress of c = %p\n", (void *)&d.c);
+
+    return 0;
+}
